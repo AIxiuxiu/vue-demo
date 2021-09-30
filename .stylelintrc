@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order"
+  ],
+  "rules": {
+    "indentation": 2,
+    "rule-empty-line-before": "never",
+    "at-rule-empty-line-before": "never",
+    "no-descending-specificity": null,
+    "selector-pseudo-class-no-unknown": null,
+    "declaration-block-trailing-semicolon": null,
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": [
+          "v-deep"
+        ]
+      }
+    ],
+    "property-no-unknown": null
+  }
+}
